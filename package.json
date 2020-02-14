@@ -4,8 +4,8 @@
   "description": "social network for developers",
   "main": "server.js",
   "scripts": {
-    "start":"node server",
-    "server":"nodemon server"
+    "start": "node server",
+    "server": "nodemon server"
   },
   "author": "zachee",
   "license": "ISC",
@@ -17,6 +17,7 @@
     "gravatar": "^1.8.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.0",
+    "morgan": "^1.9.1",
     "request": "^2.88.2"
   },
   "devDependencies": {

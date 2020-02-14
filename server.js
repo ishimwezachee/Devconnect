@@ -4,10 +4,13 @@ const users = require("./routes/api/users");
 const profile = require("./routes/api/profile");
 const posts = require("./routes/api/post");
 const auth = require("./routes/api/users");
+const morgan = require("morgan");
 const app = express();
 // connect Database;
 connectDB();
-
+// init middlware
+app.use(express.json({extended:false}));
+app.use(morgan("dev"));
 app.get('/',(req,res)=> res.send("Api Running "));
 // Define ROUTES 
 
