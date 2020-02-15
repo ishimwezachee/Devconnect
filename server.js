@@ -3,7 +3,7 @@ const connectDB = require("./config/db");
 const users = require("./routes/api/users");
 const profile = require("./routes/api/profile");
 const posts = require("./routes/api/post");
-const auth = require("./routes/api/users");
+const auth = require("./routes/api/auth");
 const morgan = require("morgan");
 const app = express();
 // connect Database;
