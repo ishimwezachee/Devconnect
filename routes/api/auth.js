@@ -41,7 +41,7 @@ async (req,res)=>{
 // extract user email and password;
     const{email,password} = req.body;
  try {
-     // request user from the database
+     // request user from the datatbase
     let user = await User.findOne({email});
     if(!user){
         return res
